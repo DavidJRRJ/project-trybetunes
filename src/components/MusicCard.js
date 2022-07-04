@@ -35,7 +35,7 @@ class MusicCard extends React.Component {
       loading: true,
     }, () => {
       this.setState({
-        inputFav: data.some((mscId) => mscId === music.trackId),
+        inputFav: data.find((e) => e === music.trackId),
         loading: false,
       });
     });
