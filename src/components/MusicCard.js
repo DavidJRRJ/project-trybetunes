@@ -61,8 +61,8 @@ class MusicCard extends React.Component {
       <div>
         {loading ? <Loading /> : (
           <div>
-            <p>{music.artistName}</p>
-            <audio data-testid="audio-component" src={ music.artistName } controls>
+            <p>{music.trackName}</p>
+            <audio data-testid="audio-component" src={ music.previewUrl } controls>
               <track kind="captions" />
               O seu navegador não suporta o elemento
               {' '}
